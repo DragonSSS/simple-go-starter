@@ -40,5 +40,11 @@ lint-docker:
 lint:
 		$(LINTER) run
 
-.PHONY: all setup build build-linux clean test show-coverage lint-docker lint
+swag:
+		swag init -g main.go
+
+image:
+		docker build -t gostarter:latest .
+
+.PHONY: all setup build build-linux clean test show-coverage lint-docker lint swag image
 

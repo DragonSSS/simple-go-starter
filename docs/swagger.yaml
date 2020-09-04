@@ -1,0 +1,24 @@
+basePath: /
+host: localhost:8080
+info:
+  contact:
+    email: scarecrow@gamil.com
+    name: API Support
+  description: simple go starter template
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Simple Go Starter
+  version: "1.0"
+paths:
+  /healthz:
+    get:
+      description: Health check if server is ready
+      responses:
+        "204":
+          description: Server is ready
+      summary: Health check
+      tags:
+      - health
+swagger: "2.0"
