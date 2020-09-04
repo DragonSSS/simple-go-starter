@@ -4,6 +4,14 @@
 
 ## Intro
 
+## Architecture
+
+## APIs
+
+The Go swaggo plugin is used to generate API doc with annotations in the code.
+
+The yaml of swagger api file is at [swagger.yaml](https://github.com/DragonSSS/simple-go-starter/blob/master/docs/swagger.yaml). Please review it with [online swagger editor](https://editor.swagger.io/)
+
 ## Infrastructure
 
 [Makefile](https://github.com/DragonSSS/simple-go-starter/blob/master/Makefile) takes care of:
@@ -30,4 +38,3 @@ The repo is integrated with Travis CI pipeline with [travis.yml](https://github.
   * Deploy a k8s service for cloud audition app
   * Forward local traffic into the k8s service by kubectl port-forward
   * Check health of app by curl
-  
