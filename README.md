@@ -31,10 +31,10 @@ The repo is integrated with Travis CI pipeline with [travis.yml](https://github.
 * Build binary (make build)
 * Deploy the local built image on k8s cluster, check health of web service
   * Install k8s cluster on the fly using k8s Kind (running k8s cluster into container)
-  * Build cloud audition docker image locally
+  * Build go-starter docker image locally
   * Load local built image into k8s cluster
-  * Deploy cloud audition app
+  * Deploy go-starter app
   * Check the log of running pod
-  * Deploy a k8s service for cloud audition app
+  * Deploy a k8s service for go-starter
   * Forward local traffic into the k8s service by kubectl port-forward
-  * Check health of app by curl
+  * Check health of go-starter by curl
