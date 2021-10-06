@@ -18,7 +18,7 @@ The yaml of swagger api file is at [swagger.yaml](https://github.com/DragonSSS/s
 
 * Run code linter with golangci-lint docker
 * Download dependencies using Go modules
-* Build binary into build/bin/
+* Build binary into `build/bin/`
 * Build docker image using [Dockerfile](https://github.com/DragonSSS/simple-go-starter/blob/master/Dockerfile)
 * Run unit test and generate test coverage report into coverage.out
 * Generate swagger API doc
