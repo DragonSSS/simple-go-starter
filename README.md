@@ -20,15 +20,15 @@ The yaml of swagger api file is at [swagger.yaml](https://github.com/DragonSSS/s
 * Download dependencies using Go modules
 * Build binary into `build/bin/`
 * Build docker image using [Dockerfile](https://github.com/DragonSSS/simple-go-starter/blob/master/Dockerfile)
-* Run unit test and generate test coverage report into coverage.out
+* Run unit test and generate test coverage report into `coverage.out`
 * Generate swagger API doc
 * Clean the compiled binary
 
 The repo is integrated with Travis CI pipeline with [travis.yml](https://github.com/DragonSSS/simple-go-starter/blob/master/.travis.yml), which supports stages:
 
-* Lint (make lint)
-* Unit test (make test)
-* Build binary (make build)
+* Lint `make lint`
+* Unit test `make test`
+* Build binary `make build`
 * Deploy the local built image on k8s cluster, check health of web service
   * Install k8s cluster on the fly using k8s Kind (running k8s cluster into container)
   * Build go-starter docker image locally
